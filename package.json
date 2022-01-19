@@ -1,0 +1,16 @@
+{
+  "name": "read-timer",
+  "version": "1.0.0",
+  "description": "A simple timer app built for a Mr. Read",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "Dylan Coxshall",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^16.0.7",
+    "electron-packager": "^15.4.0"
+  }
+}

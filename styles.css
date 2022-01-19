@@ -1,0 +1,49 @@
+body {
+	/* font-family: "dylFont"; */
+	background-color: rgb(37, 37, 37);
+}
+
+h1 {
+	color: white;
+}
+
+@font-face {
+	font-family: "dylFont";
+	src: url(./assets/Monaco.woff) format("woff");
+}
+
+textarea,
+textarea:focus {
+	font-family: "dylFont";
+	text-align: center;
+	font-size: 80px;
+	resize: none;
+	width: 60px;
+	height: 100px;
+	background-color: rgb(30, 30, 30);
+	border: none;
+	outline: none;
+	color: white;
+}
+
+#clock_holder {
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+	width: 90%;
+}
+
+.colonSeperator {
+	font-size: 80px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0px;
+	color: white;
+}
+
+button {
+	background-color: rgb(60, 60, 60);
+	border: none;
+	margin-left: 10px;
+	display: block;
+}

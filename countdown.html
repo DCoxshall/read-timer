@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>READ'S COUNTDOWN</title>
+		<link rel="stylesheet" href="styles.css">
+		<script src="changefocus.js"></script>
+		<script src="loadDate.js"></script>
+	</head>
+	<body>
+		<audio id="timerEndSound" loop=false>
+			<source src="./assets/mlg-airhorn.mp3" type="audio/mp3">
+		</audio>
+
+		<header id="titlebar">
+			<div id="drag-region"></div>
+		</header>
+
+		<div id="clock_holder">
+			<textarea rows=1 cols=1 id="input1" maxlength=1 oninput="change_focus(1)" onfocus="this.select()">0</textarea>
+			<textarea rows=1 cols=1 id="input2" maxlength=1 oninput="change_focus(2)" onfocus="this.select()">0</textarea>
+			<p class="colonSeperator">:</p>
+			<textarea rows=1 cols=1 id="input3" maxlength=1 oninput="change_focus(3)" onfocus="this.select()">0</textarea>
+			<textarea rows=1 cols=1 id="input4" maxlength=1 oninput="change_focus(4)" onfocus="this.select()">0</textarea>
+			<p class="colonSeperator">:</p>
+			<textarea rows=1 cols=1 id="input5" maxlength=1 oninput="change_focus(5)" onfocus="this.select()">0</textarea>
+			<textarea rows=1 cols=1 id="input6" maxlength=1 onfocus="this.select()">0</textarea>
+			<button id="startBtn">START</button>
+			<button id="modeBtn">MODE</button>
+		</div>	
+	</body>
+</html>
