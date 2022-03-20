@@ -1,6 +1,11 @@
+html {
+	height: 100%;
+}
+
 body {
 	/* font-family: "dylFont"; */
 	background-color: rgb(37, 37, 37);
+	height: 100%;
 }
 
 h1 {
@@ -30,7 +35,21 @@ textarea:focus {
 	display: flex;
 	flex-direction: row;
 	margin: auto;
-	width: 90%;
+	width: 100%;
+	height: 104px;
+}
+
+#input6 {
+	margin-right: 5px;
+}
+
+#interface_holder_one,
+#interface_holder_two {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	width: 20%;
+	height: 100%;
 }
 
 .colonSeperator {
@@ -44,6 +63,16 @@ textarea:focus {
 button {
 	background-color: rgb(60, 60, 60);
 	border: none;
-	margin-left: 10px;
+	margin-left: 2px;
+	margin-right: 2px;
 	display: block;
+	color: white;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	height: 100%;
+	font-size: 20px;
+}
+
+#soundBtn {
+	font-size: 50px;
 }

@@ -5,10 +5,14 @@
 		<link rel="stylesheet" href="styles.css">
 		<script src="changefocus.js"></script>
 		<script src="loadDate.js"></script>
+		<link rel="stylesheet" href="C:\Users\dacox\Documents\OneDrive\Documents\Code\JS\Electron\read-timer\assets\css\all.css">
 	</head>
 	<body>
 		<audio id="timerEndSound" loop=false>
 			<source src="./assets/mlg-airhorn.mp3" type="audio/mp3">
+		</audio>
+		<audio id="beep" loop=false>
+			<source src="./assets/beep.mp3" type="audio/mp3">
 		</audio>
 
 		<header id="titlebar">
@@ -24,8 +28,13 @@
 			<p class="colonSeperator">:</p>
 			<textarea rows=1 cols=1 id="input5" maxlength=1 oninput="change_focus(5)" onfocus="this.select()">0</textarea>
 			<textarea rows=1 cols=1 id="input6" maxlength=1 onfocus="this.select()">0</textarea>
-			<button id="startBtn">START</button>
-			<button id="modeBtn">MODE</button>
+			<div id="interface_holder_one">
+				<button id="startBtn">START</button>
+				<button id="clearBtn">CLEAR</button>
+			</div>
+			<div id="interface_holder_two">
+				<button id="soundBtn"><i id="soundIcon" class="fas fa-volume-mute"></i></button>
+			</div>
 		</div>	
 	</body>
 </html>

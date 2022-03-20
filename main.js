@@ -3,14 +3,18 @@ const { app, BrowserWindow, ipcMain, nativeTheme } = require("electron");
 function createWindow() {
 	const win = new BrowserWindow({
 		width: 600,
-		height: 170,
+		height: 150,
 		resizable: false,
-		icon: "assets/clock.png",
+		icon: "./assets/clock_Y5v_icon.ico",
+		backgroundColor: "#312450",
+		show: false,
 	});
 
-	win.removeMenu();
+	//win.webContents.openDevTools();  debug mode
 
 	win.loadFile("countdown.html");
+
+	win.removeMenu();
 
 	ipcMain.handle("dark-mode:toggle", () => {
 		if (nativeTheme.shouldUseDarkColors) {
@@ -23,6 +27,10 @@ function createWindow() {
 
 	ipcMain.handle("dark-mode:system", () => {
 		nativeTheme.themeSource = "system";
+	});
+
+	win.once("ready-to-show", () => {
+		win.show();
 	});
 }
 
